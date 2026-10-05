@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+.encabezado {
+    background-color: #1f4e79;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    width: min(700px,92%);
+    margin: 35px auto;
+}
+
+.tarjeta-operacion {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+}
+
+label {
+    display:block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+}
+
+.boton {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2f75b5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton:hover {
+  opacity: 0.9;
+}
+
+.resultado {
+  margin-top: 22px;
+  padding: 14px;
+  background: #eaf5ea;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.error {
+  margin-top: 22px;
+  padding: 14px;
+  background: #fdecec;
+  color: #a61b1b;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .menu a {
+    display: block;
+    margin: 8px 0;
+  }
+}

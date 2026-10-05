@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>division</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css')}}">
+</head>
+<body>
+
+<header class="encabezado">
+    <h1>calculadora basica con flask</h1>
+
+    <nav class="menu">
+        <a href="/suma">suma</a>
+        <a href="/resta">resta</a>
+        <a href="/multiplicacion">multiplicacion</a>
+        <a href="/division">division</a>
+    </nav>
+</header>
+
+<main class="contenedor">
+    <section class="tarjeta-operacion">
+        <h2>division</h2>
+
+        <form method="POST">
+            <label for="numero1">primer numero</label>
+            <input id="numero1" name="numero1"
+                   type="number" step="any" required>
+
+            <label for="numero2">segundo numero</label>
+            <input id="numero2" name="numero2"
+                   type="number" step="any" required>
+
+            <button class="boton" type="submit">
+                calcular division
+            </button>
+        </form>
+
+        {% if resultado is not none %}
+            <p class="resultado">
+                resultado: {{ resultado }}
+            </p>
+        {% endif %}
+    </section>
+</main>
+</body>
+</html>
